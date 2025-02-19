@@ -1,3 +1,21 @@
+// const city = document.getElementById('#city');
+// const form = document.querySelector("#form");
+// form.addEventListener("submit", (e) => {
+//     e.preventDefault();
+//     console.log(city.value);
+//     axios(`http://api.weatherapi.com/v1/current.json?key=b4db485d7c4c485fa6d84351232508&q=${city.value}&aqi=no`)
+    
+//     .then((response) => {
+//         console.log(response.data);
+
+        
+        
+//     }).catch((error) => {
+//     console.log(error);
+// })
+
+// })  
+
 const form = document.querySelector('#form');
 const city = document.querySelector('#city');
 const div = document.querySelector('#container');
@@ -27,7 +45,7 @@ form.addEventListener('submit', (event) => {
         <h14>Precipitation: ${res.data.current.precip_mm} mm</h14>`
     }).catch(err => {
         console.log('error ==> ' , err);
-        alert('no city found')
+        alert('O bhai kya kr rha hai! Please enter a valid city name')
 
     })
 
